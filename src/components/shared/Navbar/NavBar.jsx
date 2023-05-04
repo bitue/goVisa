@@ -21,46 +21,65 @@ const NavBar = () => {
                             />
                         </svg>
                     </label>
+                    <ul
+                        tabIndex={0}
+                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                    >
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>Services</a>
+                        </li>
+                        <li>
+                            <a>About Us</a>
+                        </li>
+                        <li>
+                            <a>Why Us</a>
+                        </li>
+                        <li>
+                            <a>Gallery</a>
+                        </li>
+                        <li>
+                            <a>Videos</a>
+                        </li>
+                        <li>
+                            <a>Testimonials</a>
+                        </li>
+                        <li>
+                            <a>Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Go visa consultancy</a>
+                <a className="btn btn-ghost normal-case text-xl">Go Visa Consultancy</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
                         <a>Home</a>
                     </li>
-                    <li tabIndex={0}>
-                        <a>
-                            Services
-                            <svg
-                                className="fill-current"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                            </svg>
-                        </a>
-                        <ul className="p-2">
-                            <li>
-                                <a>Tour plan </a>
-                            </li>
-                            <li>
-                                <a>Visa Guideline </a>
-                            </li>
-                            <li>
-                                <a>Visa Preparation</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a>Services</a>
                     </li>
                     <li>
                         <a>About Us</a>
                     </li>
+                    <li>
+                        <a>Why Us</a>
+                    </li>
+                    <li>
+                        <a>Gallery</a>
+                    </li>
+                    <li>
+                        <a>Videos</a>
+                    </li>
+                    <li>
+                        <a>Testimonials</a>
+                    </li>
+                    <li>
+                        <a>Contact Us</a>
+                    </li>
                 </ul>
-            </div>
-            <div className="navbar-end">
-                <a className="btn">Get started</a>
             </div>
         </div>
     );
