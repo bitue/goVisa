@@ -24,7 +24,7 @@ export default function CardLayOut() {
             <h1 className="text-3xl text-bold text-center my-3">Services</h1>
             <div className="flex md:flex-row justify-around ">
                 {data.map((ele, idx) => {
-                    return <Card ele={ele}></Card>;
+                    return <Card key={idx} ele={ele}></Card>;
                 })}
             </div>
         </div>

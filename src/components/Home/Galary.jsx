@@ -16,9 +16,9 @@ export default function Galary() {
         <div>
             <h1 className="text-3xl text-bold text-center my-3 "> Gallery</h1>
             <div className="flex justify-between items-center mx-14">
-                {data.map((ele) => {
+                {data.map((ele, idx) => {
                     return (
-                        <div>
+                        <div key={idx}>
                             <img src={ele.img} alt="" height={300} width={400} />
                         </div>
                     );

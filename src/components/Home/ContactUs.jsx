@@ -46,9 +46,9 @@ export default function ContactUs() {
                         ></iframe>
                     </div>
                     <div>
-                        {data.map((ele) => {
+                        {data.map((ele, idx) => {
                             return (
-                                <div className="flex  items-center px-3 py-5">
+                                <div key={idx} className="flex  items-center px-3 py-5">
                                     <div className="mx-5">
                                         <img src={ele.img} height={50} width={50}></img>
                                     </div>
