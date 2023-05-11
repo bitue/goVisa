@@ -6,12 +6,12 @@ export default function CardLayOut() {
         {
             img: '/canada-f.jpg',
             des: 'We are an immigration firm dealing with providing study permits for students aspiring to study abroad.',
-            title: 'Student Visa'
+            title: 'Skilled'
         },
         {
             img: '/approved.jpg',
             des: 'We are an immigration firm dealing with providing study permits for students aspiring to study abroad.',
-            title: 'Permanent Visa'
+            title: 'Visa'
         },
         {
             img: '/canada-ff.jpg',
@@ -20,9 +20,9 @@ export default function CardLayOut() {
         }
     ];
     return (
-        <div>
-            <h1 className="text-3xl text-bold text-center my-3">Services</h1>
-            <div className="flex md:flex-row justify-around ">
+        <div id="services" className="w-11/12 mx-auto">
+            <h1 className="text-3xl text-bold text-center my-5">Services</h1>
+            <div className="  flex flex-col  md:flex-row  items-center  justify-between  ">
                 {data.map((ele, idx) => {
                     return <Card key={idx} ele={ele}></Card>;
                 })}

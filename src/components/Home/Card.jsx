@@ -4,7 +4,7 @@ export default function Card({ ele }) {
     const { img, des, title } = ele;
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-xl sm:my-2">
                 <figure className="px-10 pt-10">
                     <img src={img} alt="Shoes" className="rounded-xl" />
                 </figure>

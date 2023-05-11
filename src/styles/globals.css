@@ -28,4 +28,12 @@ body {
 
 .bg-banner-img {
     background-image: url('/goVisabanner.webp');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+/* .con {
+    width: '90%';
+    margin: 15 30;
+} */

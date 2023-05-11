@@ -23,32 +23,43 @@ export default function ContactUs() {
             des: 'House D, 36 Zakir Hossain Road, Dhaka 1205'
         }
     ];
+
+    // <iframe
+    //     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7083398298873!2d90.36690779999999!3d23.7577779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6526f8f35b%3A0x36a6a50c54410b7e!2sGoVisa%20Consultancy!5e0!3m2!1sen!2sbd!4v1683257858869!5m2!1sen!2sbd"
+    //     width="600"
+    //     height="450"
+    //     style="border:0;"
+    //     allowfullscreen=""
+    //     loading="lazy"
+    //     referrerpolicy="no-referrer-when-downgrade"
+    // ></iframe>;
     return (
-        <div>
+        <div id="contact">
             <Head>
                 <script
                     async
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.2325405872622!2d90.36720448208212!3d23.75733911668912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfe1ad267c5b%3A0xd1c93b35f1cd2042!2sENGLISH%20HUB%20%26%20CONSULTANT!5e0!3m2!1sen!2sbd!4v1683196331630!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7083398298873!2d90.36690779999999!3d23.7577779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6526f8f35b%3A0x36a6a50c54410b7e!2sGoVisa%20Consultancy!5e0!3m2!1sen!2sbd!4v1683257858869!5m2!1sen!2sbd"
                     height="400"
                     width="600"
                 />
             </Head>
-            <div className="mx-14 my-12 w-9/12 ">
-                <h2 className="text-3xl text-bold text-center my-12">Contact Us</h2>
-                <div className="flex justify-between items-center">
-                    <div>
+            <h2 className="text-3xl text-bold text-center my-12">Contact Us</h2>
+            <div className="w-11/12 mx-auto my-10">
+                <div className="flex md:flex-row flex-col items-center  justify-between ">
+                    <div className="">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.2325405872622!2d90.36720448208212!3d23.75733911668912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfe1ad267c5b%3A0xd1c93b35f1cd2042!2sENGLISH%20HUB%20%26%20CONSULTANT!5e0!3m2!1sen!2sbd!4v1683196331630!5m2!1sen!2sbd"
-                            width="600"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7083398298873!2d90.36690779999999!3d23.7577779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6526f8f35b%3A0x36a6a50c54410b7e!2sGoVisa%20Consultancy!5e0!3m2!1sen!2sbd!4v1683257858869!5m2!1sen!2sbd"
+                            width="400"
                             height="400"
+                            allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
-                    <div>
+                    <div className="md:w-3/5 sm:w-full ">
                         {data.map((ele, idx) => {
                             return (
-                                <div key={idx} className="flex  items-center px-3 py-5">
+                                <div key={idx} className="flex  items-center px-3 py-5 ">
                                     <div className="mx-5">
                                         <img src={ele.img} height={50} width={50}></img>
                                     </div>

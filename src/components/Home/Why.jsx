@@ -16,14 +16,14 @@ export default function Why() {
         }
     ];
     return (
-        <div>
+        <div id="why">
             <h1 className="text-3xl text-bold text-center my-3">Why Us</h1>
-            <div className="mx-14 my-12 flex justify-between items-center">
+            <div className="w-11/12 mx-auto flex flex-col  md:flex-row  items-center  justify-between ">
                 {data.map((ele, key) => {
                     return (
                         <>
                             <div key={key}>
-                                <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                                <div className="card card-compact w-96 bg-base-100 shadow-xl my-3">
                                     <figure>
                                         <img src={ele.img} alt="Shoes" height={80} width={100} />
                                     </figure>

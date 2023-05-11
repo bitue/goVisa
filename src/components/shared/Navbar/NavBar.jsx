@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import React from 'react';
 
 const NavBar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar  nav-style">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,25 +30,37 @@ const NavBar = () => {
                             <a>Home</a>
                         </li>
                         <li>
-                            <a>Services</a>
+                            <Link href="/#services" scroll={false}>
+                                Services
+                            </Link>
                         </li>
                         <li>
-                            <a>About Us</a>
+                            <Link href="/#about" scroll={false}>
+                                About Us
+                            </Link>
                         </li>
                         <li>
-                            <a>Why Us</a>
+                            <Link href="/#why" scroll={false}>
+                                Why Us
+                            </Link>
                         </li>
                         <li>
-                            <a>Gallery</a>
+                            <Link href="/#galary" scroll={false}>
+                                Gallery
+                            </Link>
                         </li>
                         <li>
-                            <a>Videos</a>
+                            <Link href="/#videos" scroll={false}>
+                                Videos
+                            </Link>
                         </li>
                         <li>
                             <a>Testimonials</a>
                         </li>
                         <li>
-                            <a>Contact Us</a>
+                            <Link href="/#contact" scroll={false}>
+                                Contact Us
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -59,25 +72,37 @@ const NavBar = () => {
                         <a>Home</a>
                     </li>
                     <li>
-                        <a>Services</a>
+                        <Link href="/#services" scroll={false}>
+                            Services
+                        </Link>
                     </li>
                     <li>
-                        <a>About Us</a>
+                        <Link href="/#about" scroll={false}>
+                            About Us
+                        </Link>
                     </li>
                     <li>
-                        <a>Why Us</a>
+                        <Link href="/#why" scroll={false}>
+                            Why Us
+                        </Link>
                     </li>
                     <li>
-                        <a>Gallery</a>
+                        <Link href="/#galary" scroll={false}>
+                            Gallery
+                        </Link>
                     </li>
                     <li>
-                        <a>Videos</a>
+                        <Link href="/#videos" scroll={false}>
+                            Videos
+                        </Link>
                     </li>
                     <li>
                         <a>Testimonials</a>
                     </li>
                     <li>
-                        <a>Contact Us</a>
+                        <Link href="/#contact" scroll={false}>
+                            Contact Us
+                        </Link>
                     </li>
                 </ul>
             </div>
